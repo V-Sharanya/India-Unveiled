@@ -1,0 +1,583 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.main{
+    width: 100%;
+    height: 160vh;
+    background-image:  linear-gradient(to right,rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(bg.jpeg);
+    background-position: center;
+    background-size: cover;
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+}
+.nav-bar{
+    width: 100%;
+    height: 20vh;
+    background: linear-gradient(to right,rgba(175,143,111,0.7),rgba(175,143,111,0.7));
+}
+.heading{
+    float: left;
+    font-weight: bold;
+}
+.heading h1{
+    padding-top: 5%;
+    padding-left: 20%;
+    width: 100%;
+    font-size: 40px;
+    color: rgb(39, 37, 37);
+}
+.heading h1 a{
+    text-decoration: none;
+    color: rgb(39, 37, 37);
+}
+.heading h4{
+    padding-top: 0;
+    padding-left: 30%;
+    letter-spacing: 1px;
+    width: 100%;
+    font-size: 20px;
+    color: rgb(50, 49, 49);
+}
+.heading h4 a{
+    text-decoration: none;
+    color: rgb(50, 49, 49);
+}
+.dropdown{
+   float: right; 
+   width: 25%;
+   height: 55vh;
+   position: relative;
+}
+.dropdown-btn{
+    width: 70%;
+    height: 40px;
+    margin: 13%;
+    margin-bottom: 5%;
+    margin-top: 11%;
+    float: right;
+    color: rgb(39, 37, 37);
+    font-size: 18px;
+    font-weight: 700;
+    border: 2px solid rgb(39, 37, 37);
+    background: transparent;
+    cursor: pointer;
+}
+.dropdown-menu{
+    width: 87%;
+    height: 100%;
+    margin-top: 30%;
+    position: absolute;
+    z-index: 999999;
+    background: linear-gradient(to top, rgba(255,255,255,0.9),rgba(255,255,255,0.7));
+    display: none;
+}
+.dropdown-menu.active{
+    display: block;
+}
+.dropdown-menu ul{
+    list-style: none;
+}
+.dropdown-menu ul li{
+    padding: 3.1%;
+    margin-bottom: 0;
+}
+.dropdown-menu ul li a{
+    text-decoration: none;
+    color:rgb(50, 49, 49) ;
+    font-size: 18px;
+    font-weight: 600;
+}
+.dropdown-menu ul li:hover{
+    background: rgb(113, 113, 113);
+}
+.down{
+    width: 100%;
+    height: 140vh;
+    position: absolute;
+}
+.top1{
+    width: 90%;
+    height: 60vh;
+    margin-top: 3%;
+    margin-left: 5%;
+    background: linear-gradient(to right,rgba(234,216,192, 0.7),rgba(234,216,192, 0.5));
+    border-radius: 10px;
+    display: flex;
+}
+.top1 img{
+    position: relative;
+    float: right;
+    width: 850px;
+    height: 300px;
+    margin-top: 0%;
+    margin-left: 5%;
+    flex-direction: row;
+}
+.sayings{
+    float: left;
+    margin-left: 10px;
+}
+.sayings h1{
+    color: rgb(39, 37, 37);
+    padding-top: 10%;
+    padding-bottom: 3%;
+    flex-direction: column;
+    font-size: 60px;
+}
+.para{
+    padding-left: 4%;
+    color: rgb(39, 37, 37);
+    font-size: 30px;
+    font-weight: 400;
+    flex-direction: column;
+    width: 100%;
+}
+.top2{
+    width: 91.2%;
+    height: 50vh;
+    margin-top: 3%;
+    margin-left: 5%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    cursor: pointer;
+    scrollbar-color: transparent transparent;
+}
+.top2 a{
+    text-decoration: none;
+}
+.container{
+    width:100%;
+    height: 510vh;
+    background: linear-gradient(to right,rgba(234,216,192, 0.7),rgba(234,216,192, 0.5));
+    border-radius: 10px;
+    color: rgb(50, 49, 49) ;
+    position: relative;
+}
+.container p{
+    padding-top: 3%;
+    width: 93%;
+    padding-left: 4%;
+    font-size:large;
+    font-weight: 500;
+}
+.container h1{
+    padding-left: 4%;
+    font-size: 40px;
+    padding-top: 1%;
+    color : rgb(39, 37, 37)
+}
+.container ul{
+    padding-left: 8%;
+    padding-top: 1%;
+    font-size:large;
+    font-weight: 500;
+}
+.container ul li{
+    padding-left: 1%;
+    width: 91%;
+}
+.container h2{
+    padding-left: 4%;
+    padding-top: 2%;
+    font-size: 25px;
+    color : rgb(39, 37, 37)
+}
+.linguistic{
+    width: 80%;
+    padding-left: 10%;
+    padding-top: 2%;
+}
+.container ol{
+    padding-left: 10%;
+    padding-top: 1%;
+    font-size:large;
+    font-weight: 500;
+    line-height: 25px;
+    position: relative;
+}
+.hin:hover{
+    font-weight: bolder;
+    cursor: pointer;
+}
+.hindi{
+    position: absolute;
+    width: 400px;
+    height: 160px;
+    background: white;
+    margin-top: -5%;
+    border-radius: 5px;
+    margin-left: 8%;
+    display: none;
+}
+.hindi.active{
+    display: block;
+}
+.ben:hover{
+    font-weight: bolder;
+    cursor: pointer;
+}
+.bengali{
+    position: absolute;
+    width: 400px;
+    height: 160px;
+    background: white;
+    margin-top: -5%;
+    border-radius: 5px;
+    margin-left: 8%;
+    display: none;
+}
+.bengali.active{
+    display: block;
+}
+.mai:hover{
+    font-weight: bolder;
+    cursor: pointer;
+}
+.maithili{
+    position: absolute;
+    width: 400px;
+    height: 160px;
+    background: white;
+    margin-top: -5%;
+    border-radius: 5px;
+    margin-left: 8%;
+    display: none;
+}
+.maithili.active{
+    display: block;
+}
+.nep:hover{
+    font-weight: bolder;
+    cursor: pointer;
+}
+.nepalese{
+    position: absolute;
+    width: 400px;
+    height: 160px;
+    background: white;
+    margin-top: -5%;
+    border-radius: 5px;
+    margin-left: 8%;
+    display: none;
+}
+.nepalese.active{
+    display: block;
+}
+.sans:hover{
+    font-weight: bolder;
+    cursor: pointer;
+}
+.sanskrit{
+    position: absolute;
+    width: 400px;
+    height: 160px;
+    background: white;
+    margin-top: -5%;
+    border-radius: 5px;
+    margin-left: 8%;
+    display: none;
+}
+.sanskrit.active{
+    display: block;
+}
+.tam:hover{
+    font-weight: bolder;
+    cursor: pointer;
+}
+.tamil{
+    position: absolute;
+    width: 400px;
+    height: 160px;
+    background: white;
+    margin-top: -5%;
+    border-radius: 5px;
+    margin-left: 8%;
+    display: none;
+}
+.tamil.active{
+    display: block;
+}
+.ur:hover{
+    font-weight: bolder;
+    cursor: pointer;
+}
+.urdu{
+    position: absolute;
+    width: 400px;
+    height: 160px;
+    background: white;
+    margin-top: -5%;
+    border-radius: 5px;
+    margin-left: 8%;
+    display: none;
+}
+.urdu.active{
+    display: block;
+}
+.assam:hover{
+    font-weight: bolder;
+    cursor: pointer;
+}
+.assamese{
+    position: absolute;
+    width: 400px;
+    height: 160px;
+    background: white;
+    margin-top: -5%;
+    border-radius: 5px;
+    margin-left: 8%;
+    display: none;
+}
+.assamese.active{
+    display: block;
+}
+.dog:hover{
+    font-weight: bolder;
+    cursor: pointer;
+}
+.dogri{
+    position: absolute;
+    width: 400px;
+    height: 160px;
+    background: white;
+    margin-top: -5%;
+    border-radius: 5px;
+    margin-left: 8%;
+    display: none;
+}
+.dogri.active{
+    display: block;
+}
+.kan:hover{
+    font-weight: bolder;
+    cursor: pointer;
+}
+.kannada{
+    position: absolute;
+    width: 400px;
+    height: 160px;
+    background: white;
+    margin-top: -5%;
+    border-radius: 5px;
+    margin-left: 8%;
+    display: none;
+}
+.kannada.active{
+    display: block;
+}
+.guj:hover{
+    font-weight: bolder;
+    cursor: pointer;
+}
+.gujarati{
+    position: absolute;
+    width: 400px;
+    height: 160px;
+    background: white;
+    margin-top: -5%;
+    border-radius: 5px;
+    margin-left: 8%;
+    display: none;
+}
+.gujarati.active{
+    display: block;
+}
+.bo:hover{
+    font-weight: bolder;
+    cursor: pointer;
+}
+.bodo{
+    position: absolute;
+    width: 400px;
+    height: 160px;
+    background: white;
+    margin-top: -5%;
+    border-radius: 5px;
+    margin-left: 8%;
+    display: none;
+}
+.bodo.active{
+    display: block;
+}
+.man:hover{
+    font-weight: bolder;
+    cursor: pointer;
+}
+.manipur{
+    position: absolute;
+    width: 400px;
+    height: 160px;
+    background: white;
+    margin-top: -5%;
+    border-radius: 5px;
+    margin-left: 8%;
+    display: none;
+}
+.manipur.active{
+    display: block;
+}
+.ori:hover{
+    font-weight: bolder;
+    cursor: pointer;
+}
+.oriya{
+    position: absolute;
+    width: 400px;
+    height: 160px;
+    background: white;
+    margin-top: -5%;
+    border-radius: 5px;
+    margin-left: 8%;
+    display: none;
+}
+.oriya.active{
+    display: block;
+}
+.mara:hover{
+    font-weight: bolder;
+    cursor: pointer;
+}
+.marathi{
+    position: absolute;
+    width: 400px;
+    height: 160px;
+    background: white;
+    margin-top: -5%;
+    border-radius: 5px;
+    margin-left: 8%;
+    display: none;
+}
+.marathi.active{
+    display: block;
+}
+.san:hover{
+    font-weight: bolder;
+    cursor: pointer;
+}
+.santhali{
+    position: absolute;
+    width: 400px;
+    height: 160px;
+    background: white;
+    margin-top: -5%;
+    border-radius: 5px;
+    margin-left: 8%;
+    display: none;
+}
+.santhali.active{
+    display: block;
+}
+.tel:hover{
+    font-weight: bolder;
+    cursor: pointer;
+}
+.telugu{
+    position: absolute;
+    width: 400px;
+    height: 160px;
+    background: white;
+    margin-top: -5%;
+    border-radius: 5px;
+    margin-left: 8%;
+    display: none;
+}
+.telugu.active{
+    display: block;
+}
+.pun:hover{
+    font-weight: bolder;
+    cursor: pointer;
+}
+.punjabi{
+    position: absolute;
+    width: 400px;
+    height: 160px;
+    background: white;
+    margin-top: -5%;
+    border-radius: 5px;
+    margin-left: 8%;
+    display: none;
+}
+.punjabi.active{
+    display: block;
+}
+.sin:hover{
+    font-weight: bolder;
+    cursor: pointer;
+}
+.sindhi{
+    position: absolute;
+    width: 400px;
+    height: 160px;
+    background: white;
+    margin-top: -5%;
+    border-radius: 5px;
+    margin-left: 8%;
+    display: none;
+}
+.sindhi.active{
+    display: block;
+}
+.mal:hover{
+    font-weight: bolder;
+    cursor: pointer;
+}
+.malayalam{
+    position: absolute;
+    width: 400px;
+    height: 160px;
+    background: white;
+    margin-top: -5%;
+    border-radius: 5px;
+    margin-left: 8%;
+    display: none;
+}
+.malayalam.active{
+    display: block;
+}
+.kon:hover{
+    font-weight: bolder;
+    cursor: pointer;
+}
+.konkani{
+    position: absolute;
+    width: 400px;
+    height: 160px;
+    background: white;
+    margin-top: -5%;
+    border-radius: 5px;
+    margin-left: 8%;
+    display: none;
+}
+.konkani.active{
+    display: block;
+}
+.kash:hover{
+    font-weight: bolder;
+    cursor: pointer;
+}
+.kashmiri{
+    position: absolute;
+    width: 400px;
+    height: 160px;
+    background: white;
+    margin-top: -5%;
+    border-radius: 5px;
+    margin-left: 8%;
+    display: none;
+}
+.kashmiri.active{
+    display: block;
+}
+.container ol li{
+    width: 15%;
+}
+.languages{
+    float: right;
+    width: 50%;
+    height: 10%;
+    margin-right: 6%;
+    margin-top: 6%;
+}
+

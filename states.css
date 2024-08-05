@@ -1,0 +1,163 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.main{
+    width: 100%;
+    height: 370vh;
+    background-image:  linear-gradient(to right,rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(bg.jpeg);
+    background-position: center;
+    background-size: cover;
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+}
+.nav-bar{
+    width: 100%;
+    height: 20vh;
+    background: linear-gradient(to right,rgba(175,143,111,0.7),rgba(175,143,111,0.7));
+}
+.heading{
+    float: left;
+    font-weight: bold;
+}
+.heading h1{
+    padding-top: 5%;
+    padding-left: 20%;
+    width: 100%;
+    font-size: 40px;
+    color: rgb(39, 37, 37);
+}
+.heading h1 a{
+    text-decoration: none;
+    color: rgb(39, 37, 37);
+}
+.heading h4{
+    padding-top: 0;
+    padding-left: 30%;
+    letter-spacing: 1px;
+    width: 100%;
+    font-size: 20px;
+    color: rgb(50, 49, 49);
+}
+.heading h4 a{
+    text-decoration: none;
+    color: rgb(50, 49, 49);
+}
+.dropdown{
+   float: right; 
+   width: 25%;
+   height: 55vh;
+   position: relative;
+}
+.dropdown-btn{
+    width: 70%;
+    height: 40px;
+    margin: 13%;
+    margin-bottom: 5%;
+    margin-top: 11%;
+    float: right;
+    color: rgb(39, 37, 37);
+    font-size: 18px;
+    font-weight: 700;
+    border: 2px solid rgb(39, 37, 37);
+    background: transparent;
+    cursor: pointer;
+}
+.dropdown-menu{
+    width: 87%;
+    height: 100%;
+    margin-top: 30%;
+    position: absolute;
+    z-index: 999999;
+    background: linear-gradient(to top, rgba(255,255,255,0.9),rgba(255,255,255,0.7));
+    display: none;
+}
+.dropdown-menu.active{
+    display: block;
+}
+.dropdown-menu ul{
+    list-style: none;
+}
+.dropdown-menu ul li{
+    padding: 3.1%;
+    margin-bottom: 0;
+}
+.dropdown-menu ul li a{
+    text-decoration: none;
+    color:rgb(50, 49, 49) ;
+    font-size: 18px;
+    font-weight: 600;
+}
+.dropdown-menu ul li:hover{
+    background: rgb(113, 113, 113);
+}
+.down{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+}
+.up-bar{
+    width: 100%;
+    height: 7vh;
+    position: absolute;
+    display: flex;
+    margin-top: 3%;
+}
+.up-bar h3{
+    float: left;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 3%;
+    color: rgb(39, 37, 37);
+    border-bottom: 3px solid black;
+}
+.up-bar input{
+    float: right;
+    position: relative;
+    height: 40px;
+    width: 300px;
+    margin-left: 750px;
+    border: none;
+    padding-left: 1%;
+    font-size: 18px;
+}
+::placeholder{
+    color: rgb(39, 37, 37);
+    font-size: 18px;
+    text-align: left;
+}
+.down-bar{
+    width: 90%;
+    height: 170vh;
+    margin-top: 30vh;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 4%;
+    margin-right: 4%;
+    gap: 1.3%;
+}
+.card1{
+    width: 24%;
+    height: 25%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.card1 a{
+    text-decoration: none;
+}
+.card1 img{
+    width: 250px;
+    height: 180px;
+    padding-left: 6%;
+    margin-top: 3%;
+}
+.card1 h3{
+    color: rgb(39, 37, 37);
+    font-size: 18px;
+    text-align: center;
+    margin-top: 2%;
+}
